@@ -152,7 +152,7 @@ namespace FairyGUI
                 return c1.sortingOrder - c2.sortingOrder;
             });
 
-            _shouldCloneMaterial = true;
+            _shouldCloneMaterial = _cloneMaterial;
         }
 
         void CloneMaterials()
