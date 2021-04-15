@@ -260,7 +260,7 @@ namespace FairyGUI
             UIPackage pkg = new UIPackage();
             pkg._resBundle = res;
             pkg._fromBundle = true;
-            int pos = mainAssetName.IndexOf("_fui");
+            int pos = mainAssetName.LastIndexOf("_fui");
             if (pos != -1)
                 mainAssetName = mainAssetName.Substring(0, pos);
             if (!pkg.LoadPackage(buffer, mainAssetName))
