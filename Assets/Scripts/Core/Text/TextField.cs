@@ -804,6 +804,7 @@ namespace FairyGUI
                         else if (ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z'
                             || ch >= '0' && ch <= '9'
                             || ch == '.' || ch == '"' || ch == '\''
+                            || ch >= 0xac00 && ch <= 0xd7af // Korean (added by 1901)
                             || format.specialStyle == TextFormat.SpecialStyle.Subscript
                             || format.specialStyle == TextFormat.SpecialStyle.Superscript
                             || _textDirection != RTLSupport.DirectionType.UNKNOW && RTLSupport.IsArabicLetter(ch))
